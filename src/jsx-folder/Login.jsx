@@ -57,7 +57,7 @@ function Login() {
                     </div>
                     <div className='Password'>
                         <label htmlFor="Password">Password:</label>
-                        <input type="text" id="Password" name="Password" value={password} onChange={e => setPassword(e.target.value)}></input>
+                        <input type="password" id="Password" name="Password"  value={password} onChange={e => setPassword(e.target.value)}></input>
                     </div>
                     {showError && <p style={{color:'red', fontSize: '10px'}}>Username and password are incorrect</p>}
                 </form>
