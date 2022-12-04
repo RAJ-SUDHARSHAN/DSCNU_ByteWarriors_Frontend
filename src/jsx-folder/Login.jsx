@@ -10,9 +10,6 @@ function Login() {
                 <h1>
                     TrackTrail
                 </h1>
-                {/* <h2>
-                    Enter Details
-                </h2> */}
                 <form className='login-details'>
                     <div className='UserName'>
                         <label htmlFor="UserName">Username:</label>

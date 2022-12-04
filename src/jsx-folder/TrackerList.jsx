@@ -1,5 +1,5 @@
 import '../css-folder/TrackerList.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function TrackerList() {
     return (
@@ -10,28 +10,20 @@ function TrackerList() {
                 </h1>
             </div>
             <ul className="trackerlist">
-                {Array(2).fill(0).map(e => <li>
-                    <Link to="/">
-                    <button className="child">
-                        <label htmlFor='child'>Priya</label>
-                    </button>
+                {['Priya', 'Umang'].map(e => <li>
+                    <Link to="/Child" state={{data: e}}>
+                        <button className="child">
+                            <label htmlFor='child'>{e}</label>
+                        </button>
                     </Link>
                 </li>)
                 }
-                {/* <li>
-                    <button className="child">
-                        <label htmlFor="child">Ferran</label>
-                    </button>
-                </li>
                 <li>
-                    <button className="child">
-                        <label htmlFor="child">Umang</label>
-                    </button>
-                </li> */}
-                <li>
-                    <button className="child">
-                        <label htmlFor='child'>Add Child</label>
-                    </button>
+                    <Link to='/AddChild'>
+                        <button className="Add-child">
+                            <label htmlFor='child'>Add Child</label>
+                        </button>
+                    </Link>
                 </li>
             </ul >
         </div>
