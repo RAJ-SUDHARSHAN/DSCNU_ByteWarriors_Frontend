@@ -73,7 +73,9 @@ justify-content: center;
     outline-offset: 2px;
 }
 
-
+.child-details {
+    margin: 0.5rem;
+}
 
 @media (min-width: 768px) {
     .login {
