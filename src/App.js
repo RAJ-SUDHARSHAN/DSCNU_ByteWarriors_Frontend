@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Login from './jsx-folder/Login';
 import TrackerList from './jsx-folder/TrackerList';
