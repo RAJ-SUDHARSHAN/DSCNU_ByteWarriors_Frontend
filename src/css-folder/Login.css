@@ -1,0 +1,88 @@
+/* CSS */
+
+.body {
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 600;
+
+}
+
+.form-container{
+align-items: center;
+justify-content: center;
+
+}
+.h1{
+    margin: 20%;
+}
+
+.login-form {
+    text-align: center;
+    /* margin-top: 5%; */
+}
+
+.UserName {
+    margin-top: 0%;
+    padding: 10px;
+}
+.Password{
+    padding: 10px;
+}
+.login-button{
+    padding: 10px;
+}
+.Register-button{
+    padding: 10px;
+}
+
+
+.login {
+    background-color: #111827;
+    /* border: 1px solid transparent; */
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    /* padding: .75rem 1.2rem; */
+    /* width: 10px; */
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    margin: 20px;
+}
+
+.login:hover {
+    background-color: #374151;
+}
+
+.login:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+
+
+@media (min-width: 768px) {
+    .login {
+        padding: .75rem 1.5rem;
+    }
+
+    .UserName{
+        /* margin-top: 50%; */
+    }
+
+
+}
