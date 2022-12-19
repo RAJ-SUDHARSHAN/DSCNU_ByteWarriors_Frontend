@@ -16,7 +16,6 @@ function Login() {
 
     const checkUserNameAndPassword = async () => {
 
-        console.log({username, password})
         const response = await axios.post('https://rajsudharshan.pythonanywhere.com/login', {
             "user_name": username,
             "password" : password
@@ -43,7 +42,7 @@ function Login() {
 
     return (
 
-        <div className='login-form'>
+        <div className='login-form'>~
             <div className='form-container'>
                 <h1>
                     TrackTrail

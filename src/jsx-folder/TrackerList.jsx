@@ -10,8 +10,32 @@ function TrackerList() {
 
     const userId = location.state.userId
     const [children, setChildren] = useState([])
-    
-    useEffect(() => console.log({children}), [children])
+    useEffect(() => {
+        setInterval(() => {
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    function (position) {
+
+                        const lat = position.coords.latitude
+                        const long = position.coords.longitude
+                        axios.post('https://rajsudharshan.pythonanywhere.com/updatelocation', {
+                            "user_id": userId,
+                            "lat_long": `${lat}, ${long}`
+                        }).then((res) => console.log({ res }))
+                            .catch(e => console.error({ error: e }))
+                    },
+                    function (error) {
+                        console.error("Error Code = " + error.code + " - " + error.message);
+                    }
+                );
+
+            }
+        }, 10000)
+
+
+    }, [])
+
     useEffect(() => {
         const fetchChildList = async () => {
             const response = await axios.post('https://rajsudharshan.pythonanywhere.com/getchildid', {
@@ -25,20 +49,20 @@ function TrackerList() {
 
             const finalUserList = []
 
-            for (let i = 0; i < requiredUsers.length; i++){
-                for(let j = 0; j < allUsers.length; j++){ 
-                    if(requiredUsers[i].tracking_user_id === allUsers[j].id){
-                        finalUserList.push({...requiredUsers[i], user_name: allUsers[j].user_name})
+            for (let i = 0; i < requiredUsers.length; i++) {
+                for (let j = 0; j < allUsers.length; j++) {
+                    if (requiredUsers[i].tracking_user_id === allUsers[j].id) {
+                        finalUserList.push({ ...requiredUsers[i], user_name: allUsers[j].user_name })
                     }
                 }
             }
 
             setChildren(finalUserList)
 
-       }
+        }
 
         fetchChildList()
-    },[])
+    }, [])
     return (
         <div>
             <div className="header">
@@ -48,7 +72,7 @@ function TrackerList() {
             </div>
             <ul className="trackerlist">
                 {children && children.map((e, idx) => <li key={idx}>
-                    <Link to="/Child" state={{data: e}}>
+                    <Link to="/Child" state={{ data: e }}>
                         <button className="child">
                             <label htmlFor='child'>{e.user_name}</label>
                         </button>

@@ -16,6 +16,8 @@ function App() {
     console.log({ isTokenFound });
   }, [isTokenFound]);
 
+
+
   return (
     <BrowserRouter>
       <p>Token: {fcmToken}</p>
