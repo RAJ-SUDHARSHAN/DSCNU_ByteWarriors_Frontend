@@ -42,7 +42,7 @@ function Login() {
 
     return (
 
-        <div className='login-form'>~
+        <div className='login-form'>
             <div className='form-container'>
                 <h1>
                     TrackTrail
