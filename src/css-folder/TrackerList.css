@@ -1,13 +1,13 @@
-.header {
+/* .header {
     text-align: center;
 }
 
 .trackerlist {
     text-align: center;
     list-style: none;
-}
+} */
 
-.child {
+/* .child {
     background-color: #111827;
     border-radius: .75rem;
     box-sizing: border-box;
@@ -34,8 +34,8 @@
 
 .child:hover {
     background-color: #374151;
-}
-
+} */
+/* 
 .login:focus {
     box-shadow: none;
     outline: 2px solid transparent;
@@ -80,4 +80,4 @@
 
 
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {} */

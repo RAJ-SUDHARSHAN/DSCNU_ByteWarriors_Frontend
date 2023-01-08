@@ -7,8 +7,8 @@ import axios from 'axios'
 
 const API_KEY = "AIzaSyBK-xckagY7ua5F0qsjtzDVnxL0-63BquU"
 const containerStyle = {
-  width: '500px',
-  height: '500px'
+  width: '100%',
+  height: '100vh'
 };
 
 const Map = () => {

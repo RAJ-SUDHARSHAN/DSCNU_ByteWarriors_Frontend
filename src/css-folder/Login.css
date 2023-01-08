@@ -1,6 +1,6 @@
 /* CSS */
 
-.body {
+/* .body {
     font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1.125rem;
     font-weight: 600;
@@ -18,7 +18,6 @@ justify-content: center;
 
 .login-form {
     text-align: center;
-    /* margin-top: 5%; */
 }
 
 .UserName {
@@ -38,7 +37,6 @@ justify-content: center;
 
 .login {
     background-color: #111827;
-    /* border: 1px solid transparent; */
     border-radius: .75rem;
     box-sizing: border-box;
     color: #FFFFFF;
@@ -48,8 +46,6 @@ justify-content: center;
     font-size: 1.125rem;
     font-weight: 600;
     line-height: 1.5rem;
-    /* padding: .75rem 1.2rem; */
-    /* width: 10px; */
     text-align: center;
     text-decoration: none #6B7280 solid;
     text-decoration-thickness: auto;
@@ -82,7 +78,4 @@ justify-content: center;
         padding: .75rem 1.5rem;
     }
 
-  
-
-
-}
+} */

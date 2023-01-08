@@ -12,15 +12,8 @@ function App() {
   const [fcmToken, setFcmToken] = useState("");
   getTokenCall(setTokenFound, setFcmToken);
 
-  // useEffect(() => {
-  //   console.log({ isTokenFound });
-  // }, [isTokenFound]);
-
-
-
   return (
     <BrowserRouter>
-      {/* <p>Token: {fcmToken}</p> */}
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/tracker-list" element={<TrackerList />} />
